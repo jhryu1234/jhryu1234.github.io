@@ -1,0 +1,87 @@
+body {
+    background-color: black;
+  }
+  
+  /* 기본 스타일 */
+  .image-container {
+    margin-right: 50px;
+    position: relative;
+    text-align: center
+  }
+  
+  .profile_2-image {
+    margin-right: 140px;
+    position: relative;
+    top: -36px;
+  }
+  
+  .allplay-image{
+    margin-left: 190px;
+    margin-top: -200px;
+  }
+  
+  .youtubemusic{
+    margin-top: 1px;
+  }
+  
+  .image-container {
+    position: relative;
+  }
+  
+  .img_1-image {
+    position: absolute;
+    top: 225px;
+    right: 660px;
+  }
+  
+  .img_2-image {
+    position: absolute;
+    top: 300px;
+    right: 660px;
+    animation: float 2s infinite;
+  }
+  
+  .img_3-image {
+    position: absolute;
+    top: 370px;
+    right: 655px;
+  }
+  
+  .img_4-image {
+    position: absolute;
+    top: 445px;
+    right: 653px;
+  }
+  
+  .move-up {
+    transform: translateY(-50px);
+  }
+  
+  /* 미디어 쿼리 */
+  @media only screen and (max-width: 600px) {
+    .profile-image {
+      margin-right: 50%;
+      /* 예시 */
+      width: 80px;
+      /* 예시 */
+      height: auto;
+      /* 예시 */
+    }
+  
+    /* 이하 반복해서 필요한 요소들을 조정 */
+  }
+  
+  /* 애니메이션 효과 정의 */
+  @keyframes float {
+    0% {
+      transform: translate(0, 0);
+    }
+  
+    50% {
+      transform: translate(0, -20px);
+    }
+  
+    100% {
+      transform: translate(0, 0);
+    }
+  }
